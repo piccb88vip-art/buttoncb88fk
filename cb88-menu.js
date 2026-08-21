@@ -1,4 +1,8 @@
+(() => {
+  const loadMenu = () => {
+    if (document.getElementById("cb88-pmenu")) return;
 
+    document.body.insertAdjacentHTML("beforeend", `
 <div id="cb88-pmenu">
   <button class="cb88-launcher" type="button" aria-label="Buka menu CLICKBET88" aria-expanded="false">
     <span class="cb88-brand" aria-hidden="true"><b>M</b><b>E</b><b>N</b><b>U</b></span>
@@ -9,14 +13,13 @@
     <a class="cb88-link rtp" href="https://click-lynk.com/RTP_GACOR_CLICKBET88WL" target="_blank" rel="noopener"><span class="cb88-favicon"><svg viewBox="0 0 24 24"><path d="M4 19h16v2H2V3h2v16Zm3-4 3.6-4.1 3 2.4L18.9 6l1.5 1.3-6.7 8.3-3-2.4L8.5 16 7 15Z"/></svg></span><span>RTP</span><i>›</i></a>
     <a class="cb88-link jp" href="https://click-lynk.com/Jackpot_Clickbet88" target="_blank" rel="noopener"><span class="cb88-favicon"><svg viewBox="0 0 24 24"><path d="M4 4h3l2 4 3-5 3 5 2-4h3l-2.5 10H6.5L4 4Zm3.2 12h9.6l-.8 3H8l-.8-3Zm1 5h7.6v2H8.2v-2Z"/></svg></span><span>Bukti JP</span><i>›</i></a>
     <a class="cb88-link score" href="https://click-lynk.com/Live-Score" target="_blank" rel="noopener"><span class="cb88-favicon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm0 2-2.2 1.6.8 2.5h2.8l.8-2.5L12 4ZM6.1 7l-.8 2.6 2.2 1.6 2.2-1.6L8.9 7H6.1Zm11.8 0H15l-.8 2.6 2.2 1.6 2.2-1.6L17.9 7ZM9.7 12.2l-1.3 2.5 1.4 2.4h4.4l1.4-2.4-1.3-2.5H9.7Zm-1.2 6.1-1.1.7 2.5 1 .9-1.7H9.5l-1 .7Zm7 0-1-.7h-1.3l.9 1.7 2.5-1-1.1-.7Z"/></svg></span><span>Live Score</span><i>›</i></a>
-    <a class="cb88-link help" href="https://click-lynk.com/PENGADUAN-PELANGGAN" target="_blank" rel="noopener"><span class="cb88-favicon"><svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 1 8 8v1a3 3 0 0 1 2 2.8v2.4a3 3 0 0 1-3 3h-1v-8.7a6 6 0 0 0-12 0v8.7H5a3 3 0 0 1-3-3v-2.4A3 3 0 0 1 4 11v-1a8 8 0 0 1 8-8Zm4 15v2a3 3 0 0 1-3 3h-2v-2h2a1 1 0 0 0 1-1v-2h2Z"/></svg></span><span>Pusat Pengaduan</span><i>›</i></a>
+    <a class="cb88-link help" href="https://click-lynk.com/PENGADUAN-PELANGAN" target="_blank" rel="noopener"><span class="cb88-favicon"><svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 1 8 8v1a3 3 0 0 1 2 2.8v2.4a3 3 0 0 1-3 3h-1v-8.7a6 6 0 0 0-12 0v8.7H5a3 3 0 0 1-3-3v-2.4A3 3 0 0 1 4 11v-1a8 8 0 0 1 8-8Zm4 15v2a3 3 0 0 1-3 3h-2v-2h2a1 1 0 0 0 1-1v-2h2Z"/></svg></span><span>Pusat Pengaduan</span><i>›</i></a>
   </nav>
 </div>
 <style>
 #cb88-pmenu{--n:#060b28;--n2:#173474;--gold:#e6bb5c;--cream:#ffefad;--red:#ed1429;position:fixed;z-index:2147483000;left:0;top:50%;transform:translateY(-50%);font-family:Arial,Helvetica,sans-serif;isolation:isolate}#cb88-pmenu *{box-sizing:border-box}.cb88-launcher{width:52px;height:164px;cursor:pointer;padding:0;border:1px solid #ffe48b;border-left:0;border-radius:0 11px 11px 0;color:#fff;position:relative;overflow:hidden;background:linear-gradient(145deg,#fff0ad,#9c6712 29%,#ffdf73 51%,#7f4e09);box-shadow:0 0 7px #ffe080,0 0 18px #e9b53099,0 12px 28px #000a;transition:width .25s,filter .25s}.cb88-launcher:before{content:"";position:absolute;inset:2px 1px 2px 0;border-radius:0 9px 9px 0;background:radial-gradient(circle at 92% 50%,#3f7dff77,transparent 43%),linear-gradient(180deg,#1d49b3,#081345 57%,#1c419e);box-shadow:inset 0 0 22px #55a1ff88,0 0 12px #2e79ff66}.cb88-launcher:after{content:"";position:absolute;z-index:1;width:130px;height:22px;top:31px;left:-120px;transform:rotate(-51deg);background:linear-gradient(90deg,transparent,#ffffffe8,transparent);filter:drop-shadow(0 0 5px #fff);animation:cb88sweep 2.6s infinite}.cb88-launcher:hover{width:56px;filter:brightness(1.17)}.cb88-brand{position:absolute;z-index:2;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-weight:900;font-style:normal;letter-spacing:0;transform:none}.cb88-brand b{font-size:15px;line-height:16px;color:#fff;text-shadow:0 0 4px #fff,0 0 10px #8fc4ff,0 0 18px #3683ff,1px 1px 1px #0a1948}.cb88-links{position:absolute;left:62px;top:50%;width:190px;display:flex;flex-direction:column;gap:8px;visibility:hidden;opacity:0;pointer-events:none;transform:translate(-16px,-50%);transition:.28s cubic-bezier(.2,.85,.2,1)}#cb88-pmenu.open .cb88-links{visibility:visible;opacity:1;pointer-events:auto;transform:translate(0,-50%)}.cb88-link{--a:var(--gold);position:relative;min-height:42px;display:grid;grid-template-columns:32px 1fr 12px;gap:8px;align-items:center;padding:4px 8px 4px 4px;text-decoration:none;color:#fff;border-radius:7px;border:1px solid color-mix(in srgb,var(--a) 78%,#fff);border-left:3px solid var(--a);background:linear-gradient(105deg,#1c3c8d,#060a27 70%);box-shadow:0 0 5px color-mix(in srgb,var(--a) 80%,transparent),0 0 14px color-mix(in srgb,var(--a) 36%,transparent),0 7px 16px #0008,inset 0 1px #fff2;overflow:hidden;opacity:0;transform:translateX(-14px);transition:transform .22s,filter .22s,box-shadow .22s}.cb88-link:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--a);box-shadow:0 0 5px var(--a),0 0 11px var(--a);opacity:.9;animation:cb88neon 2.4s ease-in-out infinite}.open .cb88-link{opacity:1;transform:none;transition-delay:calc(var(--i)*45ms)}.cb88-link:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,#fff4 48%,transparent 62%);transform:translateX(-120%)}.cb88-link:hover{transform:translateX(5px)!important;filter:brightness(1.18);box-shadow:0 0 9px var(--a),0 0 24px color-mix(in srgb,var(--a) 55%,transparent),0 7px 16px #0008}.cb88-link:hover:before{transform:translateX(120%);transition:.5s}.cb88-link>span:nth-child(2){font-size:11.5px;font-weight:800}.cb88-link i{font-size:19px;font-style:normal;color:#ffedac;text-align:right}.cb88-favicon{width:29px;height:29px;display:grid;place-items:center;border-radius:50%;color:var(--a);font-size:18px;font-weight:900;background:radial-gradient(circle at 32% 25%,#fff6 0 6%,transparent 7%),linear-gradient(145deg,#ffffff24,#0006);border:1px solid var(--a);box-shadow:0 0 0 2px color-mix(in srgb,var(--a) 20%,transparent),0 0 12px color-mix(in srgb,var(--a) 70%,transparent);position:relative;animation:cb88icon 3s ease-in-out infinite}.cb88-favicon:before{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px dashed var(--a);opacity:.8;animation:cb88spin 7s linear infinite}.cb88-favicon svg{width:17px;height:17px;fill:currentColor}.wa{--a:#25d366;--i:0}.tg{--a:#35aeef;--i:1}.rtp{--a:#f4c85e;--i:2}.jp{--a:#ffa825;--i:3}.score{--a:#ff4e5e;--i:4}.help{--a:#fff0ae;--i:5}@keyframes cb88sweep{0%,43%{left:-120px}67%,100%{left:78px}}@keyframes cb88icon{50%{transform:translateY(-2px);filter:brightness(1.25)}}@keyframes cb88spin{to{transform:rotate(360deg)}}@keyframes cb88neon{50%{opacity:.42;filter:brightness(1.7)}}@media(max-width:600px){.cb88-launcher{width:46px;height:152px}.cb88-links{left:55px;width:min(184px,calc(100vw - 62px))}.cb88-brand b{font-size:14px;line-height:15px}}@media(prefers-reduced-motion:reduce){#cb88-pmenu *{animation:none!important;transition:none!important}}
 </style>
 <style>
-/* Slim launcher override */
 #cb88-pmenu .cb88-launcher{width:36px;border-color:#c99a2d;background:linear-gradient(145deg,#e6bd5c,#805610 42%,#d7a742);box-shadow:0 5px 15px rgba(0,0,0,.55),0 0 7px rgba(201,154,45,.38)}
 #cb88-pmenu .cb88-launcher:before{background:linear-gradient(180deg,#0e2170,#05084d 52%,#08053c);box-shadow:inset 0 0 12px rgba(48,77,182,.5)}
 #cb88-pmenu .cb88-launcher:after{opacity:.48;animation-duration:4.2s}
@@ -25,4 +28,33 @@
 #cb88-pmenu .cb88-links{left:46px}
 @media(max-width:600px){#cb88-pmenu .cb88-launcher{width:34px}#cb88-pmenu .cb88-links{left:42px;width:min(184px,calc(100vw - 49px))}}
 </style>
-<script>(()=>{const r=document.querySelector('#cb88-pmenu'),b=r.querySelector('.cb88-launcher');b.onclick=()=>{const o=r.classList.toggle('open');b.setAttribute('aria-expanded',o)};document.addEventListener('click',e=>{if(!r.contains(e.target)){r.classList.remove('open');b.setAttribute('aria-expanded','false')}});document.addEventListener('keydown',e=>{if(e.key==='Escape'){r.classList.remove('open');b.setAttribute('aria-expanded','false')}})})()</script>
+`);
+
+    (() => {
+      const r = document.querySelector('#cb88-pmenu');
+      const b = r.querySelector('.cb88-launcher');
+
+      b.onclick = () => {
+        const o = r.classList.toggle('open');
+        b.setAttribute('aria-expanded', o);
+      };
+
+      document.addEventListener('click', (e) => {
+        if (!r.contains(e.target)) {
+          r.classList.remove('open');
+          b.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          r.classList.remove('open');
+          b.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+  };
+
+  if (document.body) loadMenu();
+  else document.addEventListener("DOMContentLoaded", loadMenu);
+})();
