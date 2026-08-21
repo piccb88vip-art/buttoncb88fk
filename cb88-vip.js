@@ -2,7 +2,7 @@
   if (document.getElementById('cb88-vip-widget')) return;
 
   const vipUrl = 'https://click-lynk.com/CB88WL-VVIPPAGE';
-  const logoVipUrl = 'https://piccb88vip-art.github.io/buttoncb88fk/cb88-vip-logo.png';
+  const logoVipUrl = 'https://plcl.me/images/Q7rtH.jpg';
 
   document.body.insertAdjacentHTML('beforeend', `
     <div id="cb88-vip-widget">
