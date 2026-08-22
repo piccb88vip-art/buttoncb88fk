@@ -22,7 +22,7 @@
 
             <strong>CARI TAMPILAN SBOBET RESMI?</strong>
 
-            <p>Mainkan sportsbook favoritmu dengan pilihan favorit kamu!</p>
+            <p>Mainkan sportsbook favoritmu dengan pilihan</p>
 
             <div class="cb88-provider-grid">
               <div class="cb88-provider">
