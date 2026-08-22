@@ -20,7 +20,7 @@
           <a class="cb88-sport-content" href="${directLink}" target="_blank" rel="noopener">
             <div class="cb88-sport-kicker">⚽ CLICKBET88 SPORTBOOK</div>
 
-            <strong>CARI TAMPILAN SBOBET RESMI?</strong>
+<strong>CARI TAMPILAN<br>SBOBET RESMI?</strong>
 
             <p>Mainkan sportsbook favoritmu dengan pilihan</p>
 
