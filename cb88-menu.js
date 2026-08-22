@@ -27,19 +27,19 @@
 
             <div class="cb88-provider-grid">
               <div class="cb88-provider">
-                <img src="https://plcl.me/images/3gpwF.png" alt="SBOBET">
+                <img src="https://plcl.me/images/dUbMs.png" alt="SBOBET">
               </div>
 
               <div class="cb88-provider">
-                <img src="https://plcl.me/images/xDYaM.png" alt="NOVA">
+                <img src="https://plcl.me/images/b3oXy.png" alt="NOVA">
               </div>
 
               <div class="cb88-provider">
-                <img src="https://plcl.me/images/FKCrC.png" alt="IBCBET MAXBET">
+                <img src="https://plcl.me/images/yC2dH.png" alt="IBCBET dan MAXBET">
               </div>
 
               <div class="cb88-provider">
-                <img src="https://plcl.me/images/cEryX.png" alt="368BET">
+                <img src="https://plcl.me/images/guEXm.png" alt="368BET">
               </div>
             </div>
 
@@ -54,7 +54,7 @@
         #cb88-sport-card {
           --gold: #f3c64d;
           position: fixed;
-          z-index: 2147483647;
+          z-index: 2147482000;
           left: 0;
           top: 63%;
           transform: translateY(-50%);
@@ -123,7 +123,7 @@
 
         .cb88-sport-content {
           display: block;
-          min-height: 196px;
+          min-height: 222px;
           padding: 12px 11px 10px;
           overflow: hidden;
           position: relative;
@@ -189,13 +189,13 @@
           position: relative;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          gap: 5px;
-          margin-bottom: 9px;
+          gap: 6px;
+          margin-bottom: 10px;
         }
 
         .cb88-provider {
-          height: 26px;
-          padding: 3px 5px;
+          height: 38px;
+          padding: 4px 7px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -206,8 +206,8 @@
 
         .cb88-provider img {
           display: block;
-          max-width: 100%;
-          max-height: 18px;
+          max-width: 108px;
+          max-height: 29px;
           object-fit: contain;
           filter: drop-shadow(0 1px 2px #000);
         }
@@ -218,7 +218,7 @@
           align-items: center;
           justify-content: center;
           gap: 8px;
-          min-height: 29px;
+          min-height: 31px;
           padding: 0 8px;
           border-radius: 4px;
           color: #111c30;
@@ -251,13 +251,17 @@
         }
 
         @media (max-width: 600px) {
-          #cb88-sport-card {
-            top: 64%;
+          .cb88-sport-popup {
+            width: 225px;
           }
 
-          .cb88-sport-popup {
-            left: 39px;
-            width: 225px;
+          .cb88-provider {
+            height: 36px;
+          }
+
+          .cb88-provider img {
+            max-width: 98px;
+            max-height: 27px;
           }
         }
       </style>
@@ -266,6 +270,36 @@
     const card = document.querySelector('#cb88-sport-card');
     const tab = card.querySelector('.cb88-sport-tab');
     const closeButton = card.querySelector('.cb88-sport-close');
+
+    const placeSportButton = () => {
+      const vipButton = document.querySelector('.cb88-vip-tab');
+
+      /* Jika button VIP tidak ada, pakai posisi default CSS */
+      if (!vipButton) return;
+
+      const vipBox = vipButton.getBoundingClientRect();
+      const sportHeight = tab.getBoundingClientRect().height || 126;
+      const gap = 14;
+
+      /* SPORT diletakkan di bawah VIP */
+      let sportCenter = vipBox.bottom + gap + (sportHeight / 2);
+
+      /* Jika ruang bawah tidak cukup, pindahkan SPORT ke atas VIP */
+      if (sportCenter + (sportHeight / 2) > window.innerHeight - 12) {
+        sportCenter = vipBox.top - gap - (sportHeight / 2);
+      }
+
+      /* Tetap aman di dalam layar */
+      sportCenter = Math.max(
+        (sportHeight / 2) + 12,
+        Math.min(
+          window.innerHeight - (sportHeight / 2) - 12,
+          sportCenter
+        )
+      );
+
+      card.style.top = sportCenter + 'px';
+    };
 
     tab.addEventListener('click', () => {
       card.classList.toggle('open');
@@ -288,6 +322,14 @@
         card.classList.remove('open');
       }
     });
+
+    requestAnimationFrame(placeSportButton);
+
+    /* VIP kadang muncul lebih lambat, jadi cek ulang */
+    setTimeout(placeSportButton, 500);
+    setTimeout(placeSportButton, 1500);
+
+    window.addEventListener('resize', placeSportButton);
   };
 
   if (document.body) {
