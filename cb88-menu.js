@@ -22,7 +22,7 @@
 
             <strong>CARI PUSAT<br>SPORTBOOK?</strong>
 
-            <h3>CLICKBET88 Solusinya!!</h3>
+            <h3>DISINI SOLUSINYA !!!!</h3>
             <p>Mainkan sportsbook favoritmu di sini!</p>
 
             <div class="cb88-provider-grid">
@@ -151,11 +151,11 @@
 
         .cb88-sport-kicker {
           position: relative;
-          color: #ff4051;
-          font-size: 8px;
+          color: #ff4a58;
+          font-size: 10px;
           font-weight: 900;
-          letter-spacing: 1px;
-          text-shadow: 0 1px #000;
+          letter-spacing: 1.15px;
+          text-shadow: 0 1px 2px #000, 0 0 5px #ff1f34;
         }
 
         .cb88-sport-content strong {
@@ -199,9 +199,10 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          border: 1px solid #f5cf5c99;
+          border: 1px solid #ffe885;
           border-radius: 4px;
-          background: linear-gradient(135deg, #ffffff1c, #0008);
+          background: linear-gradient(135deg, #fff6b5, #eec648 52%, #fff0a0);
+          box-shadow: inset 0 1px 1px #fff, 0 0 5px #e8bc3f88;
         }
 
         .cb88-provider img {
@@ -209,7 +210,7 @@
           max-width: 108px;
           max-height: 29px;
           object-fit: contain;
-          filter: drop-shadow(0 1px 2px #000);
+          filter: drop-shadow(0 1px 1px #fff) drop-shadow(0 1px 2px #332100);
         }
 
         .cb88-sport-cta {
@@ -274,22 +275,18 @@
     const placeSportButton = () => {
       const vipButton = document.querySelector('.cb88-vip-tab');
 
-      /* Jika button VIP tidak ada, pakai posisi default CSS */
       if (!vipButton) return;
 
       const vipBox = vipButton.getBoundingClientRect();
       const sportHeight = tab.getBoundingClientRect().height || 126;
       const gap = 14;
 
-      /* SPORT diletakkan di bawah VIP */
       let sportCenter = vipBox.bottom + gap + (sportHeight / 2);
 
-      /* Jika ruang bawah tidak cukup, pindahkan SPORT ke atas VIP */
       if (sportCenter + (sportHeight / 2) > window.innerHeight - 12) {
         sportCenter = vipBox.top - gap - (sportHeight / 2);
       }
 
-      /* Tetap aman di dalam layar */
       sportCenter = Math.max(
         (sportHeight / 2) + 12,
         Math.min(
@@ -324,8 +321,6 @@
     });
 
     requestAnimationFrame(placeSportButton);
-
-    /* VIP kadang muncul lebih lambat, jadi cek ulang */
     setTimeout(placeSportButton, 500);
     setTimeout(placeSportButton, 1500);
 
