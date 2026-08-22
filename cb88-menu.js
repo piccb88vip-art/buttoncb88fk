@@ -22,26 +22,22 @@
 
             <strong>CARI TAMPILAN SBOBET RESMI?</strong>
 
-            <p>Mainkan sportsbook favoritmu dengan pilihan</p>
+            <p>Mainkan sportsbook favoritmu di sini!</p>
 
             <div class="cb88-provider-grid">
               <div class="cb88-provider">
-                <span>SBOBET</span>
                 <img src="https://plcl.me/images/dUbMs.png" alt="SBOBET">
               </div>
 
               <div class="cb88-provider">
-                <span>NOVA</span>
                 <img src="https://plcl.me/images/b3oXy.png" alt="NOVA">
               </div>
 
               <div class="cb88-provider">
-                <span>IBCBET</span>
-                <img src="https://plcl.me/images/yC2dH.png" alt="IBCBET">
+                <img src="https://plcl.me/images/yC2dH.png" alt="IBCBET dan MAXBET">
               </div>
 
               <div class="cb88-provider">
-                <span>368BET</span>
                 <img src="https://plcl.me/images/guEXm.png" alt="368BET">
               </div>
             </div>
@@ -55,7 +51,6 @@
 
       <style>
         #cb88-sport-card {
-          --gold: #f3c64d;
           position: fixed;
           z-index: 2147482000;
           left: 0;
@@ -104,17 +99,17 @@
           position: absolute;
           left: 39px;
           top: 50%;
-          width: 465px;
+          width: 260px;
           padding: 3px;
-          border: 1px solid #e7bc45;
-          border-radius: 9px;
+          border: 1px solid #e5b83d;
+          border-radius: 10px;
           opacity: 0;
           visibility: hidden;
           pointer-events: none;
           transform: translate(-12px, -50%);
           transition: .25s ease;
-          background: linear-gradient(135deg, #f9d55b, #78520e 35%, #f6ce51);
-          box-shadow: 0 0 15px #f1c64f88, 0 10px 24px #000b;
+          background: linear-gradient(135deg, #f8d259, #80570e 38%, #f5ca4e);
+          box-shadow: 0 0 12px #e7bc4588, 0 10px 24px #000b;
         }
 
         #cb88-sport-card.open .cb88-sport-popup {
@@ -126,17 +121,17 @@
 
         .cb88-sport-content {
           display: block;
-          min-height: 180px;
-          padding: 14px 15px 12px;
+          min-height: 215px;
+          padding: 13px 13px 11px;
           overflow: hidden;
           position: relative;
           border-radius: 7px;
           color: #fff;
           text-decoration: none;
           background:
-            radial-gradient(circle at 88% 12%, #4779ec88, transparent 30%),
-            radial-gradient(circle at 15% 80%, #e6193255, transparent 34%),
-            linear-gradient(135deg, #102d80, #060b33 60%, #12377c);
+            radial-gradient(circle at 90% 10%, #4b85f588, transparent 33%),
+            radial-gradient(circle at 12% 88%, #eb183d55, transparent 38%),
+            linear-gradient(135deg, #123483, #060b33 61%, #133779);
         }
 
         .cb88-sport-content::before {
@@ -144,20 +139,20 @@
           position: absolute;
           inset: 0;
           pointer-events: none;
-          opacity: .25;
+          opacity: .2;
           background: repeating-linear-gradient(
             -45deg,
             transparent 0 8px,
-            #fff0 8px 15px
+            #ffffff11 8px 15px
           );
         }
 
         .cb88-sport-kicker {
           position: relative;
-          color: #ff4a58;
-          font-size: 11px;
+          color: #ff5360;
+          font-size: 10px;
           font-weight: 900;
-          letter-spacing: 1.15px;
+          letter-spacing: 1px;
           text-shadow: 0 1px 2px #000, 0 0 5px #ff1f34;
         }
 
@@ -166,8 +161,8 @@
           display: block;
           margin-top: 6px;
           color: #fff;
-          font-size: 20px;
-          line-height: 23px;
+          font-size: 14px;
+          line-height: 17px;
           font-weight: 900;
           white-space: nowrap;
           text-shadow: 0 2px 2px #000, 0 0 8px #4b8aff;
@@ -175,45 +170,36 @@
 
         .cb88-sport-content p {
           position: relative;
-          margin: 4px 0 11px;
+          margin: 4px 0 9px;
           color: #dce8ff;
-          font-size: 11px;
+          font-size: 9px;
           font-weight: 700;
         }
 
         .cb88-provider-grid {
           position: relative;
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 7px;
-          margin-bottom: 11px;
+          margin-bottom: 10px;
         }
 
         .cb88-provider {
-          height: 54px;
-          padding: 5px;
+          height: 43px;
+          padding: 4px 6px;
           display: flex;
-          flex-direction: column;
-          gap: 3px;
           align-items: center;
           justify-content: center;
-          border: 1px solid rgba(255, 231, 133, .72);
+          border: 1px solid rgba(255, 231, 133, .7);
           border-radius: 4px;
-          background: linear-gradient(135deg, #fff9c9, #eac64f 55%, #fff1a3);
+          background: linear-gradient(135deg, #fff9cc, #e9c649 56%, #fff0a2);
           box-shadow: inset 0 1px 1px #fff;
-        }
-
-        .cb88-provider span {
-          color: #152556;
-          font-size: 8px;
-          font-weight: 900;
-          letter-spacing: .3px;
         }
 
         .cb88-provider img {
           display: block;
-          max-width: 88px;
-          max-height: 26px;
+          max-width: 96px;
+          max-height: 29px;
           object-fit: contain;
           filter: drop-shadow(0 1px 1px #fff) drop-shadow(0 1px 2px #332100);
         }
@@ -224,13 +210,13 @@
           align-items: center;
           justify-content: center;
           gap: 8px;
-          min-height: 31px;
+          min-height: 32px;
           padding: 0 8px;
           border-radius: 4px;
           color: #111c30;
           font-size: 9px;
           font-weight: 900;
-          background: linear-gradient(180deg, #fff19a, #dcae30);
+          background: linear-gradient(180deg, #fff49e, #dba82c);
           box-shadow: 0 2px 7px #0008, inset 0 1px #fff;
         }
 
@@ -244,59 +230,30 @@
           z-index: 3;
           right: -7px;
           top: -8px;
-          width: 17px;
-          height: 17px;
+          width: 19px;
+          height: 19px;
           padding: 0;
           border: 1px solid #fff;
           border-radius: 50%;
           cursor: pointer;
           color: #fff;
           background: #e31c33;
-          font-size: 15px;
-          line-height: 14px;
+          font-size: 17px;
+          line-height: 15px;
+          box-shadow: 0 1px 4px #0008;
         }
 
         @media (max-width: 600px) {
           .cb88-sport-popup {
-            width: min(420px, calc(100vw - 48px));
-          }
-
-          .cb88-sport-content {
-            min-height: 174px;
-            padding: 12px 10px 10px;
-          }
-
-          .cb88-sport-kicker {
-            font-size: 9px;
+            width: min(260px, calc(100vw - 48px));
           }
 
           .cb88-sport-content strong {
-            font-size: 14px;
-            line-height: 18px;
-          }
-
-          .cb88-sport-content p {
-            font-size: 9px;
-            margin-bottom: 8px;
-          }
-
-          .cb88-provider-grid {
-            gap: 4px;
-            margin-bottom: 8px;
-          }
-
-          .cb88-provider {
-            height: 50px;
-            padding: 4px 2px;
-          }
-
-          .cb88-provider span {
-            font-size: 7px;
+            font-size: 13px;
           }
 
           .cb88-provider img {
-            max-width: 60px;
-            max-height: 23px;
+            max-width: 88px;
           }
         }
       </style>
