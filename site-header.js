@@ -3,7 +3,7 @@
   .c-ptpKx{
     position: fixed !important;
     overflow: hidden !important;
-    background: url("https://plcl.me/images/pJqHY.jpg") center center / cover no-repeat !important;
+    background: url("https://plcl.me/images/C7M3m.jpg") center center / cover no-repeat !important;
   }
 
   .c-ptpKx img[alt="header-bg"]{
