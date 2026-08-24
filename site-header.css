@@ -1,25 +1,33 @@
 /* MOBILE ONLY */
-@media (max-width: 991px){
-  .c-ptpKx{
-    position: fixed !important;
+@media screen and (max-width: 991px) {
+  .c-ptpKx {
+    position: relative !important;
     overflow: hidden !important;
-    background: url("https://plcl.me/images/pJqHY.jpg") center center / cover no-repeat !important;
+    background-color: #02023f !important;
+    background-image: url("https://plcl.me/images/pJqHY.jpg") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
   }
 
-  .c-ptpKx img[alt="header-bg"]{
+  /* Hilangkan background lama */
+  .c-ptpKx img[alt="header-bg"],
+  .c-ptpKx img[alt*="header" i],
+  .c-ptpKx > img:first-child {
     display: none !important;
   }
 
-  .c-ptpKx::before{
+  /* Overlay gelap */
+  .c-ptpKx::before {
     content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,.20);
-    pointer-events: none;
-    z-index: 0;
+    position: absolute !important;
+    inset: 0 !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
   }
 
-  .c-ptpKx > *{
+  .c-ptpKx > *:not(img) {
     position: relative !important;
     z-index: 1 !important;
   }
