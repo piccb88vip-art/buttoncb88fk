@@ -2,7 +2,7 @@
   const initSportbookCard = () => {
     if (document.getElementById('cb88-sport-card')) return;
 
-    const directLink = 'https://click-lynk.com/CLICKBET88NEW';
+    const directLink = 'https://click-lynk.com/LIVECHAT_CLICKBET88';
 
     document.body.insertAdjacentHTML('beforeend', `
       <div id="cb88-sport-card">
