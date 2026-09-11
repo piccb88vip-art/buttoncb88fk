@@ -1,7 +1,7 @@
 (() => {
   if (document.getElementById('cb88-vip-widget')) return;
 
-  const vipUrl = 'https://click-lynk.com/CB88WL-VVIPPAGE';
+  const vipUrl = 'https://click-lynk.com/LIVECHAT_CLICKBET88WL';
   const logoVipUrl = 'https://plcl.me/images/Q7rtH.jpg';
 
   document.body.insertAdjacentHTML('beforeend', `
